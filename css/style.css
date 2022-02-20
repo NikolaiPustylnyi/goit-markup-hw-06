@@ -98,8 +98,6 @@ body{
 .container{
     width: 1200px;
     margin: 0 auto;
-    padding-left: 15px;
-    padding-right: 15px;
 }
 
 .header{
@@ -620,7 +618,9 @@ margin-right: 30px;
     margin-bottom: 20px;
 }
 
-.footer-contacts p, .social p{
+.footer-contacts p, 
+.social p,
+.subscribe p{
     font-style: normal;
     color: var(--white);
     margin: 0 0 9px 0;
@@ -656,7 +656,8 @@ margin-right: 30px;
     margin-right: 10px;
 }
 
-.social p{
+.social p, 
+.subscribe p{
     font-size: 14px;
     text-transform: uppercase;
     margin-bottom: 20px;
@@ -666,6 +667,62 @@ margin-right: 30px;
 .social-icon{
     height: 20px;
     width: 20px;
+}
+
+.social{
+    margin-right: 93px;
+}
+
+label:focus-visible,
+input:focus-visible,
+form:focus-visible {
+    outline: none;
+}
+
+
+.subscribe-button{
+    width: 200px;
+    height: 50px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 30px;
+    text-align: center;
+    color: var(--white);
+    background-color: var(--button);
+    align-items: center;
+    margin: 0 auto;
+    border: 1px solid transparent;
+    cursor: pointer;
+    transition: background-color var(--animation-options);
+}
+
+.email-submit{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.email-subscribe input{
+    margin-right: 12px;
+    box-sizing: border-box;
+    width: 358px;
+    padding: 15px 16px;
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+}
+
+
+.subscribe-button span{
+    margin-right: 10px;
+}
+
+.subscribe-icon{
+    width: 24px;
+    height: 24px;
 }
 
 .nav-footer a{
@@ -683,3 +740,72 @@ address{
 .nav-footer li:not(:last-child){
     margin-bottom: 9px;
 }
+
+.modal-form{
+    padding: 40px;
+}
+
+.modal-form label {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 8px;
+
+    color: var(--main-text-color);
+    font-size: 12px;
+    font-style: inherit;
+    font-weight: 400;
+  }
+
+  .modal-form label p{
+    margin: 0;
+    margin-bottom: 4px;
+    color: var(--p-color);
+    font-size: 12px;
+    font-style: inherit;
+    font-weight: 400;
+    text-align: left;
+  }
+
+.modal-form input {
+    font-family: inherit;
+    margin-right: 12px;
+    box-sizing: border-box;
+    width: 448px;
+    padding: 13px 16px;
+    padding-left: 42px;
+    background-color: transparent;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+  }
+
+ .modal-form textarea {
+    resize: none;
+  }
+
+  .modal-form p{
+      margin: 0;
+      margin-bottom: 12px;
+      color: var(--main-text-color);
+      font-size: 20px;
+      font-style: inherit;
+      text-align: center;
+      font-weight: 700;
+  }
+.modal-form .subscribe-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-form-icons{
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    top: 50%;
+    margin-left: 15px;
+
+    fill: var(--main-text-color);
+}
+
+
