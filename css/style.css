@@ -929,6 +929,13 @@ address{
 
   .subscribe-button:hover{
       background-color: #188CE8;
+      cursor: pointer;
+  }
+
+  .close-button:hover,
+  .close-button:focus{
+      cursor: pointer;
+      color: var(--main-link-color-active);
   }
 
 
