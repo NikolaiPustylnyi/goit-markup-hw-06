@@ -938,4 +938,9 @@ address{
       color: var(--main-link-color-active);
   }
 
+  .contract{
+      color: var(--main-link-color-active);
+      text-decoration: underline;
+  }
+
 
