@@ -296,34 +296,43 @@
         <div class="modal">
             <form class="modal-form" name="modal_form" autocomplete="on" novalidate>
                 <p>Оставьте свои данные, мы вам перезвоним</p>
-                <label>
-                  <p>Имя</p>
-                  <input type="text" />
-                  <svg class="modal-form-icons"><use href="img/sprite.svg#icon-name-form"></use> </svg>
-                </label>
-              
-                <label>
-                  <p>Телефон</p>
-                  <input type="phone" />
-                  <svg class="modal-form-icons"><use href="img/sprite.svg#icon-phone-form"></use> </svg>
-                </label>
-              
-                <label>
-                    <p>Почта</p>
-                    <input type="email" name="email">
-                    <svg class="modal-form-icons"><use href="img/sprite.svg#icon-email-form"></use> </svg>
-                  </label>
-                  <label>
 
-                    <p>Комментарий</p>
+                <div class="form-field">
+                <label>Имя</label>
+                <input type="text" name="name" />
+                <svg class="form-icons"><use href="img/sprite.svg#icon-name-form"></use></svg>
+                </div>
+
+                <div class="form-field">
+                <label>Телефон</label>
+                <input type="tel" name="phone" />
+                <svg class="form-icons"><use href="img/sprite.svg#icon-phone-form"></use></svg>
+                </div>
+
+                <div class="form-field">
+                <label>Почта</label>
+                <input type="email" name="email" /> 
+                <svg class="form-icons"><use href="img/sprite.svg#icon-email-form"></use></svg> 
+                </div>
+
+                  <div class="form-field textarea-wrap">
+                  <label>Комментарий</label>
                     <textarea name="feedback" rows="5" placeholder="Введите текст"></textarea>
-                  </label>
-             
-                 <label>
-                    <input type="checkbox" name="signature" value="" checked />
-                    Соглашаюсь с рассылкой и принимаю <a href="#">Условия договора</a>
-                 </label>
+                  </div>
+
+
+                  <div class="form-field form-checkbox">
+                    <div class="checkbox-wraper">
+                    <label class="checkbox-container">Соглашаюсь с рассылкой и принимаю <a href="#">Условия договора</a>
+                        <input type="checkbox" checked="checked">
+                        <span class="checkmark"></span>
+                      </label>
+                </div>
+                  </div>
+                 
+                <div class="form-field">
                 <button class="subscribe-button" type="submit">Отправить</button>
+                </div>
               </form>
            <button class="close-button" data-modal-close>
                <svg><use href="./img/sprite.svg#icon-close"></use></svg>
